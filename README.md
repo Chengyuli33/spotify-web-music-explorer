@@ -51,7 +51,7 @@ All endpoints are implemented in [`routes.js`](./server/routes.js) and served vi
 
 
 ## 📊 Database
-[`Dataset Description`](data./README.md) 👉 Detailed expliation of the metadata feature and data loading in Datagrip.
+[`Dataset Description`](./data/README.md) 👉 Detailed expliation of the metadata feature and data loading in Datagrip.
 
 
 
