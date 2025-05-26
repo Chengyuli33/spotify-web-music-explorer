@@ -1,7 +1,7 @@
 
 ## 📡 Backend API Endpoints:
 
-All endpoints are implemented in [`routes.js`](./server/routes.js) and served via Express [`server.js`](./server/server.js).
+All endpoints are implemented in `routes.js` and served via Express `server.js`.
 
 
 | Method | Endpoint                  | Description                            |
@@ -24,4 +24,4 @@ All endpoints are implemented in [`routes.js`](./server/routes.js) and served vi
 | [`server.js`](./server.js) | Entry point for the backend server. Registers all API routes and starts the Express app. |
 | [`routes.js`](./routes.js) | Main route handler file. Contains all SQL-based API endpoint logic (e.g. `/top_songs`, `/search_songs`). |
 | [`config.json`](./config.json) | Stores PostgreSQL RDS credentials and backend server configuration. |
-| [`package.json`](./package.json) | Lists backend dependencies and project metadata. |
+
