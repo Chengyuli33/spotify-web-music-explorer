@@ -3,9 +3,9 @@
 A full-stack music data exploration platform developed in React + Node.js, integrated with a PostgreSQL RDS backend. This project demonstrates dynamic querying, data visualization, and backend API design. Designed as part of CIS 5500: Database and Information Systems coursework.
 
 ## 🔧 Tech Stack
+- Database: PostgreSQL on AWS RDS
 - Frontend: React.js, MUI (Material UI), Recharts
 - Backend: Node.js + Express
-- Database: PostgreSQL on AWS RDS
 - Visualization: Recharts (RadarChart, BarChart)
 - Dev Tools: VS Code, Git, Chrome DevTools, DataGrip, npm
 
@@ -16,11 +16,24 @@ A full-stack music data exploration platform developed in React + Node.js, integ
 - Pagination support and lazy-loaded tables for performance
 - Fully documented REST API with route handlers
 
+![Home](screenshots/homepage.png)
+
+![Radar Chart](screenshots/radarchart.png)
+
+![ER Diagram](screenshots/ER_diagram.png)
+
+
+## 📂 Project Structure
+
+`/server`
+
+`/client`
+
+`/data`
+
 ## 📡 Backend API Endpoints:
 
-
 All endpoints are implemented in [`routes.js`](./server/routes.js) and served via Express [`server.js`](./server/server.js).
-
 
 
 | Method | Endpoint                  | Description                            |
@@ -37,28 +50,30 @@ All endpoints are implemented in [`routes.js`](./server/routes.js) and served vi
 
 
 
-## 🖼 Screenshots
+## 📊 Database
+[`Dataset Description`](data./README.md) 👉 Detailed expliation of the metadata feature and data loading in Datagrip.
 
-![Home](screenshots/homepage.png)
 
-![Radar Chart](screenshots/radarchart.png)
-
-![ER Diagram](screenshots/ER_diagram.png)
 
 
 ## 🚀 Getting Started
 
 ### 1. Clone and install server dependencies
+This will download and save the required dependencies into the `node_modules` folder within the `/client` and `/server` directories.
 
 ```bash
 cd server
 npm install
 ```
 
+![server dependencies](screenshots/server_dependencies.png)
+
 Then start the server
 ```bash
 npm start
 ```
+
+
 
 ### 2. In another terminal, install client dependencies
 
@@ -66,6 +81,9 @@ npm start
 cd ../client
 npm install
 ```
+
+![client dependencies](screenshots/client_dependencies.png)
+
 
 Start React frontend
 ```bash

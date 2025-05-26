@@ -2,7 +2,9 @@
 
 This folder contains the raw data files used to populate the PostgreSQL database for the Web DB project.
 
----
+Data Loading: 
+![Data Loading](../screenshots/load_data.png)
+
 
 ## 💿 Albums.csv
 
