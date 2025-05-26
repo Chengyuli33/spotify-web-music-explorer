@@ -27,14 +27,11 @@ A full-stack music data exploration platform developed in React + Node.js, integ
 
 This project contains separate folders for the backend (Node.js + PostgreSQL) and frontend (React + MUI), each with its own documentation:
 
-- [`server/`](./server) – Node.js + Express backend with API routes and PostgreSQL  
-  👉 [Backend README](./server/README.md)
+- [`server/`](./server) – Node.js + Express backend with API routes and PostgreSQL. 👉 [Backend README](./server/README.md)
 
-- [`client/`](./client) – React frontend with MUI components and dynamic visualizations  
-  👉 [Frontend README](./client/README.md)
+- [`client/`](./client) – React frontend with MUI components and dynamic visualizations. 👉 [Frontend README](./client/README.md)
 
-- [`data/`](./data) – Source CSV files used to populate the database  
-  👉 [Dataset Description](./data/README.md)
+- [`data/`](./data) – Source CSV files used to populate the database. 👉 [Dataset Description](./data/README.md)
 
 
 
