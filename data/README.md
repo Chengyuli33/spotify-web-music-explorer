@@ -5,6 +5,8 @@ This folder contains the raw data files used to populate the PostgreSQL database
 Data Loading: 
 ![Data Loading](../screenshots/load_data.png)
 
+ER Diagram:
+![ER Diagram](../screenshots/ER_diagram.png)
 
 ## 💿 Albums.csv
 
