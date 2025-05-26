@@ -2,25 +2,14 @@
 
 A full-stack music data exploration platform developed in React + Node.js, integrated with a PostgreSQL RDS backend. This project demonstrates dynamic querying, data visualization, and backend API design. Designed as part of CIS 5500: Database and Information Systems coursework.
 
+
+
 ## 🔧 Tech Stack
 - Database: PostgreSQL on AWS RDS
 - Frontend: React.js, MUI (Material UI), Recharts
 - Backend: Node.js + Express, REST API with route handlers
 - Visualization: Recharts (RadarChart, BarChart)
 - Dev Tools: VS Code, Git, Chrome DevTools, DataGrip, npm
-
-## ✨ Features
-- Powerful search filters: by title, duration, plays, energy, valence, danceability, etc.
-- Top albums/songs ranking with pagination
-- Song detail page with dynamic bar chart and radar chart 
-- Pagination support and lazy-loaded tables for performance
-
-
-![Home](screenshots/homepage.png)
-
-![Radar Chart](screenshots/radarchart.png)
-
-
 
 
 ## 📂 Project Structure
@@ -32,6 +21,52 @@ This project contains separate folders for the backend (Node.js + PostgreSQL) an
 - [`client/`](./client) – React frontend with MUI components and dynamic visualizations. 👉 [Frontend README](./client/README.md)
 
 - [`data/`](./data) – Source CSV files used to populate the database. 👉 [Dataset Description](./data/README.md)
+
+
+
+## ✨ Features
+- Powerful search filters: by title, duration, plays, energy, valence, danceability, etc.
+- Top albums/songs ranking with pagination
+- Song detail page with dynamic bar chart and radar chart 
+- Pagination support and lazy-loaded tables for performance
+
+
+
+
+
+## 📸 Website Preview
+
+#### **Home Page**: 
+
+Default landing page (`/`), random “Song of the Day”, Top Songs table, and Top Albums table.
+
+![Home Page Demo](screenshots/homepage.GIF)
+
+#### **Search Songs Page**:
+
+Click "SONGS" in the top navigation bar, show filters (sliders, text input, explicit checkbox), and the results table
+
+![Search Songs Page Demo](screenshots/searchsongspage.GIF)
+
+#### **Song Details Page (Radar Chart)**:
+
+Click on any song title in Home or Album pages, popup page showing song metadata, user can toggle between bar and radar chart
+
+![Song Details Page Demo](screenshots/songdetailpage.GIF)
+
+
+#### **Albums Page**:
+
+Click "ALBUMS" in the top navigation bar, user can see grid layout of album cards with covers and album titles
+
+![Albums Page Demo](screenshots/albumspage.GIF)
+
+
+**Album Info Page**:
+
+Click on an album from the Albums page | Album cover, title, release date, and track list in a table 
+
+![Album Info Page Demo](screenshots/albuminfopage.GIF)
 
 
 
