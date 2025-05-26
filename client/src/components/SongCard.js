@@ -13,7 +13,6 @@ const config = require('../config.json');
 export default function SongCard({ songId, handleClose }) {
   const [songData, setSongData] = useState({});
   const [albumData, setAlbumData] = useState({});
-
   const [barRadar, setBarRadar] = useState(true);
 
   // TODO (TASK 20): fetch the song specified in songId and based on the fetched album_id also fetch the album data
@@ -29,7 +28,24 @@ export default function SongCard({ songId, handleClose }) {
     //       .then(res => res.json())
     //       .then(resJson => set state variable with album data)
     //     })
-  }, []);
+
+    // if no songId:
+    if (!songId) return; 
+
+    // else, valid songId:
+    fetch(`http://${config.server_host}:${config.server_port}/song/${songId}`)
+      .then(res => res.json())
+      .then(songRes => {setSongData(songRes);   
+        return fetch(`http://${config.server_host}:${config.server_port}/album/${songRes.album_id}`);
+      })
+      .then(res => res.json())
+      .then(albumRes => { setAlbumData(albumRes);  
+      })
+      .catch(err => {
+        console.error(err);
+      });
+
+  }, [songId]);
 
   const chartData = [
     { name: 'Danceability', value: songData.danceability },
@@ -82,7 +98,18 @@ export default function SongCard({ songId, handleClose }) {
                   {/* TODO (TASK 21): display the same data as the bar chart using a radar chart */}
                   {/* Hint: refer to documentation at https://recharts.org/en-US/api/RadarChart */}
                   {/* Hint: note you can omit the <Legend /> element and only need one Radar element, as compared to the sample in the docs */}
-                  <div>Replace Me</div>
+                  <RadarChart data={chartData} outerRadius={100}>
+                    <PolarGrid />
+                    <PolarAngleAxis dataKey='name' />
+                    <PolarRadiusAxis angle={90} domain={[0, 1]} />
+                    <Radar
+                      name='Song Attributes'
+                      dataKey='value'
+                      stroke='#8884d8'
+                      fill='#8884d8'
+                      fillOpacity={0.6}
+                    />
+                  </RadarChart>
                 </ResponsiveContainer>
               )
           }
