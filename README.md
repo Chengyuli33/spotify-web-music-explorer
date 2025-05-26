@@ -5,7 +5,7 @@ A full-stack music data exploration platform developed in React + Node.js, integ
 ## 🔧 Tech Stack
 - Database: PostgreSQL on AWS RDS
 - Frontend: React.js, MUI (Material UI), Recharts
-- Backend: Node.js + Express
+- Backend: Node.js + Express, REST API with route handlers
 - Visualization: Recharts (RadarChart, BarChart)
 - Dev Tools: VS Code, Git, Chrome DevTools, DataGrip, npm
 
@@ -14,44 +14,27 @@ A full-stack music data exploration platform developed in React + Node.js, integ
 - Top albums/songs ranking with pagination
 - Song detail page with dynamic bar chart and radar chart 
 - Pagination support and lazy-loaded tables for performance
-- Fully documented REST API with route handlers
+
 
 ![Home](screenshots/homepage.png)
 
 ![Radar Chart](screenshots/radarchart.png)
 
-![ER Diagram](screenshots/ER_diagram.png)
+
 
 
 ## 📂 Project Structure
 
-`/server`
+This project contains separate folders for the backend (Node.js + PostgreSQL) and frontend (React + MUI), each with its own documentation:
 
-`/client`
+- [`server/`](./server) – Node.js + Express backend with API routes and PostgreSQL  
+  👉 [Backend README](./server/README.md)
 
-`/data`
+- [`client/`](./client) – React frontend with MUI components and dynamic visualizations  
+  👉 [Frontend README](./client/README.md)
 
-## 📡 Backend API Endpoints:
-
-All endpoints are implemented in [`routes.js`](./server/routes.js) and served via Express [`server.js`](./server/server.js).
-
-
-| Method | Endpoint                  | Description                            |
-|--------|---------------------------|----------------------------------------|
-| GET    | `/song/:song_id`          | Get full metadata for a song           |
-| GET    | `/album/:album_id`        | Get full metadata for an album         |
-| GET    | `/albums`                 | List all albums (sorted by release date) |
-| GET    | `/album_songs/:album_id`  | List songs in an album (ordered by track) |
-| GET    | `/top_songs?page=N`       | Top songs by play count (paginated)    |
-| GET    | `/top_albums?page=N`      | Top albums by total plays (paginated)  |
-| GET    | `/search_songs?...`       | Filter songs by duration, energy, etc. |
-| GET    | `/random?explicit=true`   | Get a random song |
-| GET    | `/author/:type`           | Returns app author's name |
-
-
-
-## 📊 Database
-[`Dataset Description`](./data/README.md) 👉 Detailed expliation of the metadata feature and data loading in Datagrip.
+- [`data/`](./data) – Source CSV files used to populate the database  
+  👉 [Dataset Description](./data/README.md)
 
 
 
