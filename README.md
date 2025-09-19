@@ -36,33 +36,33 @@ This project contains separate folders for the backend (Node.js + PostgreSQL) an
 
 ## 📸 Website Preview
 
-#### **Home Page**: 
+### 💿 **Home Page**: 
 
 Default landing page (`/`), random “Song of the Day”, Top Songs table, and Top Albums table.
 
 ![Home Page Demo](screenshots/homepage.GIF)
 
-#### **Search Songs Page**:
+### 💿 **Search Songs Page**:
 
 Click "SONGS" in the top navigation bar, show filters (sliders, text input, explicit checkbox), and the results table
 
 ![Search Songs Page Demo](screenshots/searchsongspage.GIF)
 
-#### **Song Details Page (Radar Chart)**:
+### 💿 **Song Details Page (Radar Chart)**:
 
 Click on any song title in Home or Album pages, popup page showing song metadata, user can toggle between bar and radar chart
 
 ![Song Details Page Demo](screenshots/songdetailpage.GIF)
 
 
-#### **Albums Page**:
+### 💿 **Albums Page**:
 
 Click "ALBUMS" in the top navigation bar, user can see grid layout of album cards with covers and album titles
 
 ![Albums Page Demo](screenshots/albumspage.GIF)
 
 
-**Album Info Page**:
+### 💿 **Album Info Page**:
 
 Click on an album from the Albums page | Album cover, title, release date, and track list in a table 
 
