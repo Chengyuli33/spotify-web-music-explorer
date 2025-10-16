@@ -1,6 +1,6 @@
 # 🎧 Spotify WebDB Application
 
-A full-stack music data exploration platform developed in React + Node.js, integrated with a PostgreSQL RDS backend. This project demonstrates dynamic querying, data visualization, and backend API design. Designed as part of CIS 5500: Database and Information Systems coursework.
+A full-stack music data exploration platform built with React, Node.js, and PostgreSQL RDS. This project demonstrates dynamic querying, data visualization, and backend API design.
 
 
 
@@ -25,10 +25,11 @@ This project contains separate folders for the backend (Node.js + PostgreSQL) an
 
 
 ## ✨ Features
-- Powerful search filters: by title, duration, plays, energy, valence, danceability, etc.
-- Top albums/songs ranking with pagination
-- Song detail page with dynamic bar chart and radar chart 
-- Pagination support and lazy-loaded tables for performance
+- Powerful **search filters** by title, duration, plays, energy, valence, danceability, etc.
+- Top albums/songs ranking with **pagination**
+- Song **detail page** with dynamic bar chart and radar chart 
+- Pagination support and **lazy-loaded** tables for performance improvement.
+- Design using **MUI** components and theming.
 
 
 
@@ -110,3 +111,6 @@ npm start
 The app will run at:
 - Frontend: http://localhost:3000
 - Backend: http://localhost:8080
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. This project is designed as part of CIS 5500: Database and Information Systems coursework.
